@@ -1,0 +1,18 @@
+body {
+  background: #bcaf9c;
+  color: white;
+}
+.logo {
+  background-color: #e8c7de;
+  width: 100%;
+}
+
+footer {
+  width: 65%;
+  text-align: center;
+  background-color: #e8c7de;
+  position: relative;
+  text-align: left;
+  padding: 1em;
+  margin: 1em;
+}
