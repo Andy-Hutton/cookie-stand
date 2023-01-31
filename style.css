@@ -108,3 +108,20 @@ footer {
   color: pink;
   background-color: black;
 }
+
+td,
+th {
+  border: 1px solid #fff;
+  padding: 0.5rem;
+}
+
+td:hover {
+  cursor: pointer;
+  color: pink;
+  background: black;
+  transform: scale(1.5);
+}
+
+myTable {
+  background-image: img src= "/img/Goldfish-Crackers.jpg";
+}
