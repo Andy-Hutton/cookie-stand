@@ -1,7 +1,9 @@
 body {
   background: #bcaf9c;
-  color: white;
+  color: black;
   font-family: monospace;
+  background-image: url("./img/Goldfish-Crackers.jpg");
+  width: auto;
 }
 
 .title {
@@ -57,6 +59,8 @@ h1 {
   border: solid 0.15em black;
   padding: 1em;
   margin: 1em;
+  border-radius: 25%;
+  opacity: 10;
 }
 .pat:hover {
   transform: translateX(1em);
@@ -74,6 +78,7 @@ h2 {
   border: solid 0.15em black;
   padding: 1em;
   margin: 1em;
+  border-radius: 25%;
 }
 
 .mission:hover {
@@ -111,8 +116,8 @@ footer {
 
 td,
 th {
-  border: 1px solid #fff;
-  padding: 0.5rem;
+  border: 2px solid rgb(223, 33, 138);
+  padding: 1.5rem;
 }
 
 td:hover {
