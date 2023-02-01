@@ -1,19 +1,19 @@
 body {
-  background: #bcaf9c;
+  background: #d9acba;
   color: black;
   font-family: monospace;
-  background-image: url("./img/Goldfish-Crackers.jpg");
+
   width: auto;
 }
 
 .title {
   color: black;
   font-size: 4em;
-  text-shadow: 6px 6px 10px whitesmoke;
+  text-shadow: 6px 6px 5px whitesmoke;
   display: grid;
   grid-template-areas: "stack";
   place-items: centre;
-  border: black 0.15em solid;
+  border: white 0.15em solid;
 }
 h1 {
   text-decoration: underline;
@@ -35,10 +35,10 @@ h1 {
   }
 }
 
-.title > * {
+/* .title > * {
   grid-row: 1 / -1;
   grid-column: 1/ -1;
-}
+} */
 
 .main-layout {
   min-height: 100vh;
@@ -54,16 +54,41 @@ h1 {
   width: 100%;
 }
 
+.container {
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: src= "./img/Goldfish-Crackers.jpg";
+}
+
+container div {
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  font-size: 2rem;
+  font-family: monospace;
+  text-shadow: 0 0 3px #000;
+  display: flex;
+  flex-wrap: wrap; /* allows the row/column to break into more than one row/column */
+  flex-direction: column; /* flips the x and y axis */
+  justify-content: center; /* effects the x-axis */
+  align-items: center; /* effects the y-axis */
+}
+
 .pat {
-  width: 30em;
-  border: solid 0.15em black;
-  padding: 1em;
-  margin: 1em;
-  border-radius: 25%;
-  opacity: 10;
+  width: 30rem;
+  border: solid 0.15rem black;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5%;
+  background-color: whitesmoke;
+  /* opacity: 10; */
 }
 .pat:hover {
-  transform: translateX(1em);
+  transform: translateX(1rem);
   color: pink;
   background-color: black;
   cursor: pointer;
@@ -74,20 +99,45 @@ h2 {
 }
 
 .mission {
-  width: 30em;
-  border: solid 0.15em black;
-  padding: 1em;
-  margin: 1em;
-  border-radius: 25%;
+  width: 30rem;
+  border: solid 0.15rem black;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5%;
+  background-color: whitesmoke;
 }
 
 .mission:hover {
-  transform: translatex(1em);
+  transform: translatex(1rem);
   color: pink;
   background-color: black;
   cursor: pointer;
 }
 
+td,
+th {
+  border: 2px solid rgb(41, 1, 23);
+  padding: 1.5rem;
+  font-weight: bolder;
+}
+
+td:hover {
+  cursor: pointer;
+  color: pink;
+  background: black;
+  transform: scale(1.5);
+}
+
+.table {
+  border: 2px solid black;
+  background-image: url("./img/Goldfish-Crackers.jpg");
+  position: relative;
+  padding: 2rem;
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
 footer {
   border: 0.5em solid white;
   width: 100;
@@ -95,8 +145,8 @@ footer {
   background-color: #ee9490;
   position: center;
   text-align: center;
-  padding: 0.2em;
-  margin: 0.2em;
+  padding: 0.2rem;
+  margin: 0.2rem;
 }
 
 .button {
@@ -112,21 +162,4 @@ footer {
 .button:hover {
   color: pink;
   background-color: black;
-}
-
-td,
-th {
-  border: 2px solid rgb(223, 33, 138);
-  padding: 1.5rem;
-}
-
-td:hover {
-  cursor: pointer;
-  color: pink;
-  background: black;
-  transform: scale(1.5);
-}
-
-myTable {
-  background-image: img src= "/img/Goldfish-Crackers.jpg";
 }
