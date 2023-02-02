@@ -2,7 +2,6 @@ body {
   background: #d9acba;
   color: black;
   font-family: monospace;
-
   width: auto;
 }
 
@@ -35,19 +34,11 @@ h1 {
   }
 }
 
-/* .title > * {
-  grid-row: 1 / -1;
-  grid-column: 1/ -1;
-} */
-
-.main-layout {
+/* .main-layout {
   min-height: 100vh;
-  display: grid;
-  grid-template-rows:
-    auto
-    auto
-    auto;
-}
+  display: flex;
+  flex-wrap: wrap;
+} */
 
 .logo {
   background-color: #ee9490;
@@ -56,62 +47,81 @@ h1 {
 
 .container {
   width: 90%;
-  height: 500px;
+  height: auto;
   margin: 0 auto;
-  border: 5px solid black;
+  border: 3px solid black;
   display: flex;
-  flex-wrap: wrap;
-  background-image: src= "./img/Goldfish-Crackers.jpg";
-}
-
-container div {
-  width: 200px;
-  height: 200px;
-  color: #fff;
-  font-size: 2rem;
-  font-family: monospace;
-  text-shadow: 0 0 3px #000;
-  display: flex;
-  flex-wrap: wrap; /* allows the row/column to break into more than one row/column */
-  flex-direction: column; /* flips the x and y axis */
-  justify-content: center; /* effects the x-axis */
-  align-items: center; /* effects the y-axis */
+  flex-wrap: space-evenly;
+  flex-direction: row;
 }
 
 .pat {
-  width: 30rem;
+  width: 30%;
   border: solid 0.15rem black;
   padding: 1rem;
   margin: 1rem;
   border-radius: 5%;
   background-color: whitesmoke;
   /* opacity: 10; */
+  transition-duration: 1s;
+  transition-delay: 0s;
 }
+
 .pat:hover {
-  transform: translateX(1rem);
+  transform: scale(1.2);
   color: pink;
   background-color: black;
   cursor: pointer;
 }
 
-h2 {
-  text-decoration: underline;
-}
-
-.mission {
-  width: 30rem;
+.recipes {
+  width: 30%;
   border: solid 0.15rem black;
   padding: 1rem;
   margin: 1rem;
   border-radius: 5%;
   background-color: whitesmoke;
+  transition-duration: 1s;
+  transition-delay: 0s;
 }
-
-.mission:hover {
-  transform: translatex(1rem);
+.recipes:hover {
+  transform: scale(1.2);
   color: pink;
   background-color: black;
   cursor: pointer;
+}
+.h2 {
+  text-decoration: underline;
+  /* font-weight: bold;
+  background-color: whitesmoke;
+  border: 0.15rem black; */
+}
+
+.mission {
+  width: 30%;
+  border: solid 0.15rem black;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5%;
+  background-color: whitesmoke;
+  transition-duration: 1s;
+  transition-delay: 0s;
+}
+
+.mission:hover {
+  transform: scale(1.2);
+  /* transform: translatex(1rem); */
+  color: pink;
+  background-color: black;
+  cursor: pointer;
+}
+
+.gif {
+  display: flex;
+  flex-wrap: wrap;
+  justify: space-between;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 td,
@@ -129,6 +139,8 @@ td:hover {
 }
 
 .table {
+  width: fit-content;
+  height: auto;
   border: 2px solid black;
   background-image: url("./img/Goldfish-Crackers.jpg");
   position: relative;
@@ -138,6 +150,25 @@ td:hover {
   flex-wrap: wrap;
   align-items: flex-start;
 }
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border-color: black;
+}
+legend {
+  text-align: center;
+}
+input {
+  margin-bottom: 2rem;
+}
+label {
+  margin-top: 1rem;
+}
+
 footer {
   border: 0.5em solid white;
   width: 100;
@@ -162,4 +193,51 @@ footer {
 .button:hover {
   color: pink;
   background-color: black;
+}
+
+.additionals {
+  text-align: left;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+.merch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start black;
+}
+
+.merch div {
+  border: solid 0.1rem black;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  width: 400px;
+  height: 370px;
+}
+
+.address {
+  background-image: url("./");
+  border: solid 0.1rem black;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  padding: 0.2rem;
+  margin: 0.2rem;
 }

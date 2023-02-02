@@ -7,21 +7,46 @@
     <link rel="stylesheet" href="style.css" />
     <title>Cookie-Stand</title>
   </head>
-  <div class="title">
-    <img src="img/salmon.png" alt="its a salmon" class="logo" ; />
-    <h1>Salmon Cookies</h1>
-  </div>
   <body>
-    <div class="main-layout">
-    <a href="index.html" sales><button class="button">Home Page</button></a>
-  
-    
+    <div class="title">
+      <img src="img/salmon.png" alt="its a salmon" class="logo" ; />
+      <h1>Salmon Cookies</h1>
+    </div>
+
+    <div class="links">
+      <a href="index.html" sales><button class="button">Home Page</button></a>
+      <a href="merch.html" merch><button class="button">Merch sales</button></a>
+      <a href="locations.html" locations
+        ><button class="button">Locations</button></a
+      >
+    </div>
+
     <div class="table">
-    <h2>Sales list</h2>
-  <table id="myTable">
-</table>
-</div>
-<h2>Shark bait hoo ha ha</h2>
+      <h2>Sales list</h2>
+      <table id="myTable"></table>
+    </div>
+    <h2>Shark bait hoo ha ha, Add new info here</h2>
+    <div class="form">
+      <form id="new-store-form">
+        <fieldset>
+          <legend>Enter New Cookie Store Location:</legend>
+          <label for="name-input">Store Name:</label>
+          <input name="name" id="name-input" type="text" />
+
+          <label for="min-cust-input">Min Customers per hour:</label>
+          <input name="minCust" id="min-cust-input" type="text" />
+
+          <label for="max-cust-input">Max Customers per hour:</label>
+          <input name="maxCust" id="max-cust-input" type="text" />
+
+          <label for="avg-cookies-input">Average Cookies sold per hour:</label>
+          <input name="avgCookies" id="avg-cookies-input" type="text" />
+
+          <button id="submit-button" type="submit">SUBMIT</button>
+        </fieldset>
+      </form>
+    </div>
+
     <footer>
       <img
         width="10%"
@@ -31,22 +56,26 @@
         ;
       />
       We've gone flippin global! locations in Seattle, Tokyo, Dubai, Paris,
-      Lima. Want to talk to us? Drop us a line...
-      salmon.cookies@fintastic.com
+      Lima. Want to talk to us? Drop us a line,... salmon.cookies@fintastic.com
       <img
         width="10%"
         height="40px"
-        src="img/salmon.png"
+        src="img/left fish.jpg"
         alt="its a salmon"
+        rotate-immage="180"
         ;
       />
-      Flippin-eck give us a follow
+      Follow with us on our fintastic socials
+
       <a href="https://en.wikipedia.org/wiki/Finding_Nemo"
-      ><button class="button">Instagram</button></a>
-    <a href="https://en.wikipedia.org/wiki/Finding_Dory"
-      ><button class="button">facebook</button></a>
-    <a href="https://www.seaspiracy.org/"
-      ><button class="button">linkedIn</button></a>
+        ><button class="button">Instagram</button></a
+      >
+      <a href="https://en.wikipedia.org/wiki/Finding_Dory"
+        ><button class="button">facebook</button></a
+      >
+      <a href="https://www.seaspiracy.org/"
+        ><button class="button">linkedIn</button></a
+      >
     </footer>
     <script src="app.js"></script>
   </body>
