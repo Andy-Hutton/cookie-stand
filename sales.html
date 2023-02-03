@@ -31,16 +31,31 @@
         <fieldset>
           <legend>Enter New Cookie Store Location:</legend>
           <label for="name-input">Store Name:</label>
-          <input name="name" id="name-input" type="text" />
+          <input name="name" id="name-input" type="text" required="name" />
 
           <label for="min-cust-input">Min Customers per hour:</label>
-          <input name="minCust" id="min-cust-input" type="text" />
+          <input
+            name="minCust"
+            id="min-cust-input"
+            type="text"
+            required="name"
+          />
 
           <label for="max-cust-input">Max Customers per hour:</label>
-          <input name="maxCust" id="max-cust-input" type="text" />
+          <input
+            name="maxCust"
+            id="max-cust-input"
+            type="text"
+            required="name"
+          />
 
           <label for="avg-cookies-input">Average Cookies sold per hour:</label>
-          <input name="avgCookies" id="avg-cookies-input" type="text" />
+          <input
+            name="avgCookies"
+            id="avg-cookies-input"
+            type="text"
+            required="name"
+          />
 
           <button id="submit-button" type="submit">SUBMIT</button>
         </fieldset>
@@ -56,7 +71,7 @@
         ;
       />
       We've gone flippin global! locations in Seattle, Tokyo, Dubai, Paris,
-      Lima. Want to talk to us? Drop us a line,... salmon.cookies@fintastic.com
+      Lima. Want to talk to us? Drop us a line... salmon.cookies@fintastic.com
       <img
         width="10%"
         height="40px"

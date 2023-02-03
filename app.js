@@ -212,6 +212,10 @@ CookieStore.prototype.render = function () {
     tr.appendChild(td);
   }
 };
+//   td = document.createElement("td");
+//   td.textContent = total;
+//   tr.appendChild(td);
+// };
 
 function makeHeaderRow() {
   const table = document.getElementById("myTable");
@@ -234,11 +238,19 @@ const tokyo = new CookieStore("Tokyo", 3, 24, 1.2);
 const dubai = new CookieStore("Dubai", 11, 38, 3.7);
 const paris = new CookieStore("Paris", 20, 38, 2.3);
 const lima = new CookieStore("Lima", 2, 16, 4.6);
-seattle.render();
-tokyo.render();
-dubai.render();
-paris.render();
-lima.render();
+// seattle.render();
+// tokyo.render();
+// dubai.render();
+// paris.render();
+// lima.render();
+
+const stores = [seattle, tokyo, dubai, paris, lima];
+
+for (let i = 0; i < stores.length; i++) {
+  stores[i].render();
+}
+
+//  setting up a new for to add to table
 
 const form = document.getElementById("new-store-form");
 
@@ -246,21 +258,19 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const storeNameInput = event.target.name.value;
-  const maxCustInput = event.target.maxCust.value;
   const minCustInput = event.target.minCust.value;
+  const maxCustInput = event.target.maxCust.value;
   const avgCookieInput = event.target.avgCookies.value;
 
   console.log(storeNameInput);
-  console.log(maxCustInput);
   console.log(minCustInput);
+  console.log(maxCustInput);
   console.log(avgCookieInput);
-
-  form.requestFullscreen();
 
   const newStore = new CookieStore(
     storeNameInput,
-    maxCustInput,
     minCustInput,
+    maxCustInput,
     avgCookieInput
   );
 
